@@ -1,0 +1,7 @@
+event type=15
+event type=3
+key type=1 value=97 repeat=0
+key type=2 value=97 repeat=0
+event type=3
+key type=1 value=27 repeat=0
+state maximized=0 minimized=0 floating=0 fullscreen=0 down=1

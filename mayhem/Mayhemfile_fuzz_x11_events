@@ -1,0 +1,13 @@
+project: savantenvs/RGFW
+target: fuzz_x11_events
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_x11_events/testsuite
+
+# AFL, one process per input: see mayhem/build.sh (a button number above 7 or a format-8 _NET_WM_STATE crashes RGFW within libFuzzer's
+# in-process start-up probe). Same harness code as /mayhem/fuzz_x11_events.
+cmds:
+  - cmd: /mayhem/fuzz_x11_events-afl @@
+    afl: true
+    timeout: 10

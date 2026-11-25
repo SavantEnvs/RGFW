@@ -1,0 +1,5 @@
+request target=MULTIPLE proptype=ATOM_PAIR format=32 n=4
+notify target=MULTIPLE property=FUZZ_PROP
+  prop FUZZ_PROP type=ATOM_PAIR format=32 n=4 UTF8_STRING FUZZ_A INTEGER None
+  prop FUZZ_A type=UTF8_STRING format=8 n=6 data=[multi]
+  prop FUZZ_B type=None format=0 n=0

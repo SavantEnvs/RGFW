@@ -1,0 +1,9 @@
+event type=15
+event type=12
+event type=11
+event type=9
+event type=7
+event type=13
+event type=15
+event type=16
+state maximized=0 minimized=0 floating=0 fullscreen=0 down=0

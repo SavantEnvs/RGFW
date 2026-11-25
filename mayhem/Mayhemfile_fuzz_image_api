@@ -1,0 +1,11 @@
+project: savantenvs/RGFW
+target: fuzz_image_api
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_image_api/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_image_api
+    libfuzzer: true
+    timeout: 10

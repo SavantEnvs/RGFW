@@ -1,0 +1,11 @@
+project: savantenvs/RGFW
+target: fuzz_xdnd_events
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_xdnd_events/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_xdnd_events
+    libfuzzer: true
+    timeout: 10

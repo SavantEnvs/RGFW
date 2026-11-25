@@ -1,0 +1,13 @@
+project: savantenvs/RGFW
+target: fuzz_clipboard_read
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_clipboard_read/testsuite
+
+# AFL, one process per input: see mayhem/build.sh (an upstream crash on any empty clipboard property
+# fails libFuzzer's in-process start-up probe). Same harness code as /mayhem/fuzz_clipboard_read.
+cmds:
+  - cmd: /mayhem/fuzz_clipboard_read-afl @@
+    afl: true
+    timeout: 10

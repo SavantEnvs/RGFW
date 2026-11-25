@@ -1,0 +1,1 @@
+clipboard type=1 len=11 data=[latin text]

@@ -1,0 +1,2 @@
+drop type=2 len=9 data=[/tmp/x%4]
+drop type=2 len=8 data=[/tmp/y%]

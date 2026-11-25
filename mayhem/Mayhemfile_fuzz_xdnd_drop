@@ -1,0 +1,11 @@
+project: savantenvs/RGFW
+target: fuzz_xdnd_drop
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_xdnd_drop/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_xdnd_drop
+    libfuzzer: true
+    timeout: 10

@@ -1,0 +1,4 @@
+drag action=1 event=21
+drag action=2 event=21
+drop type=2 len=14 data=[file:///a/b]
+drop type=2 len=10 data=[file:///z]

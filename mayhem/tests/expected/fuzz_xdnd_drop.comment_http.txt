@@ -1,0 +1,1 @@
+drop type=2 len=25 data=[http://example.com/xAy]

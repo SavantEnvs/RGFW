@@ -1,0 +1,9 @@
+request target=STRING proptype=TARGETS format=8 n=0
+notify target=STRING property=FUZZ_PROP
+  prop FUZZ_PROP type=STRING format=8 n=11 data=[plain text]
+request target=SAVE_TARGETS proptype=TARGETS format=8 n=0
+notify target=SAVE_TARGETS property=FUZZ_PROP
+  prop FUZZ_PROP type=None format=0 n=0
+request target=text/plain proptype=TARGETS format=8 n=0
+notify target=text/plain property=FUZZ_PROP
+  prop FUZZ_PROP type=None format=0 n=0

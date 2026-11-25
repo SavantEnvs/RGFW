@@ -1,0 +1,3 @@
+request target=TARGETS proptype=TARGETS format=8 n=0
+notify target=TARGETS property=FUZZ_PROP
+  prop FUZZ_PROP type=ATOM format=32 n=4 TARGETS MULTIPLE UTF8_STRING STRING

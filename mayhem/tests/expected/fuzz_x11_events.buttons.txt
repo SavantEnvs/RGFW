@@ -1,0 +1,6 @@
+event type=15
+button type=4 value=0
+button type=5 value=0
+button type=4 value=2
+event type=6
+state maximized=0 minimized=0 floating=0 fullscreen=0 down=1

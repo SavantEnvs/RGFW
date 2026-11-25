@@ -1,0 +1,2 @@
+drop type=2 len=22 data=[file:///tmp/a b.txt]
+drop type=2 len=10 data=[file:///x]

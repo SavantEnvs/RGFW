@@ -1,0 +1,3 @@
+event type=15
+event type=17
+state maximized=1 minimized=0 floating=0 fullscreen=0 down=0
